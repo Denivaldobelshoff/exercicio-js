@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 60px;
+    margin-left: 250px;
+}
+
+h1, h2, input, button {
+    display: block;
+    width: 450px;
+    margin-bottom: 12px;
+    padding: 8px;
+}
+
+button {
+    background-color: rgba(8, 50, 240, 0.938);
+    color: #fff
+}
+
+form button:hover {
+    background-color: rgb(33, 114, 244);
+}
+
+* {
+    background-color: rgb(200, 243, 246);
+}
