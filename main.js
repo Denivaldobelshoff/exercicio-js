@@ -1,16 +1,16 @@
 const validar = document.getElementById('form-validar');
 
-function compararCampos() {
-    var campoA = document.getElementById("campoA");
-    var campoB = document.getElementById("campoB");
+validar.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var campoA = parseFloat(document.getElementById("campoA").value);
+    var campoB = parseFloat(document.getElementById("campoB").value);
 
-    if (Number(campoB.value) > Number(campoA.value)) {
-        alert("O valor do depósito é maior que o salo da conta!");
+    if (campoB >= campoA) {
+        alert("O valor do depósito é maior que o saldo da conta!");
     } else {
         alert("Seu depósito foi feito com sucesso!");
     }
-    campoA.value = "";
-    campoB.value = "";
-}
+    location.reload()
+})   
 
 console.log(validar);

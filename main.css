@@ -18,7 +18,13 @@ h1, h2, input, button {
 
 button {
     background-color: rgba(8, 50, 240, 0.938);
-    color: #fff
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
 }
 
 form button:hover {
